@@ -19,7 +19,6 @@ func Raid1a(x, y int) {
 	} else {
 		side = 1
 	}
-//DrawBase(x)
 	for i := 0; i < x; i++ {
 		if i == 0 || i == x-1 {
 			z01.PrintRune(111)
@@ -38,7 +37,6 @@ func Raid1a(x, y int) {
 			}
 			z01.PrintRune(rune(10))
 		}
-//DrawBase(x)
 		for i := 0; i < x; i++ {
 			if i == 0 || i == x-1 {
 				z01.PrintRune(111)
