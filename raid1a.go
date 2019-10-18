@@ -25,8 +25,10 @@ func Raid1a(x, y int) {
 		for l := 0; l < y-2; l++ {
 			for j := 0; j < side; j++ {
 				z01.PrintRune(124)
-				for k := 0; k < x-2; k++ {
-					z01.PrintRune(' ')
+				if j == 0 {
+					for k := 0; k < x-2; k++ {
+						z01.PrintRune(' ')
+					}
 				}
 			}
 			z01.PrintRune(rune(10))
