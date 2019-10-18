@@ -2,15 +2,15 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func DrawBase(x int) {
-	for i := 0; i < x; i++ {
-		if i == 0 || i == x-1 {
-			z01.PrintRune(111)
-		} else if i < x-1 {
-			z01.PrintRune(45)
-		}
-	}
-}
+	//func DrawBase(x int) {
+	//for i := 0; i < x; i++ {
+	//	if i == 0 || i == x-1 {
+	//		z01.PrintRune(111)
+	//	} else if i < x-1 {
+	//		z01.PrintRune(45)
+	//	}
+//	}
+//}
 
 func Raid1a(x, y int) {
 	side := 0
@@ -19,7 +19,14 @@ func Raid1a(x, y int) {
 	} else {
 		side = 1
 	}
-	DrawBase(x)
+	//DrawBase(x)
+	for i := 0; i < x; i++ {
+		if i == 0 || i == x-1 {
+			z01.PrintRune(111)
+		} else if i < x-1 {
+			z01.PrintRune(45)
+		}
+	}
 	z01.PrintRune(rune(10))
 	if y > 1 {
 		for l := 0; l < y-2; l++ {
@@ -31,7 +38,14 @@ func Raid1a(x, y int) {
 			}
 			z01.PrintRune(rune(10))
 		}
-		DrawBase(x)
+		//DrawBase(x)
+		for i := 0; i < x; i++ {
+			if i == 0 || i == x-1 {
+				z01.PrintRune(111)
+			} else if i < x-1 {
+				z01.PrintRune(45)
+			}
+		}
 		z01.PrintRune(rune(10))
 	}
 }
